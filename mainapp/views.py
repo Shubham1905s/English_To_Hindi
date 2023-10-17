@@ -7,3 +7,9 @@ def getdata(request,input):
     return JsonResponse({'data':result})
 def home(request):
     return render(request,'mainapp/home.html')
+
+def about(request):
+    return render(request,'mainapp/about.html')
+
+def docs(request):
+    return render(request,'mainapp/docs.html')
