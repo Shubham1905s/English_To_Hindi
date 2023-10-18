@@ -3,27 +3,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <title>Eng2Hindi</title>
+    <title>English To Hindi</title>
     <link rel="stylesheet" href="{% static 'base.css' %}">
     {% block extra_css %}{% endblock %}
+
 </head>
 <body>
-<header>
-    <h1>Eng2Hindi</h1>
+   <div class="main">
+<header class="mi">
+    <div class="pa">
+    <h1>ENGLISH 2 HINDI</h1>
+        </div>
     <nav>
         <div class="home">
-            <a href="{% url 'mainapp:home' %}" class="nav-link">Home</a>
+            <a href="{% url 'mainapp:home' %}" class="nav-link">HOME</a>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="{% url 'mainapp:about' %}" class="nav-link">About us</a></li>
-                <li><a href="{% url 'mainapp:doc' %}" class="nav-link">Docs</a></li>
+                <li><a href="{% url 'mainapp:about' %}" class="nav-link">ABOUT US</a></li>
+                <li><a href="{% url 'mainapp:doc' %}" class="nav-link">DOCS</a></li>
             </ul>
         </div>
+
     </nav>
 </header>
 {% block content %}
 {% endblock %}
+       </div>
 </body>
 </html>

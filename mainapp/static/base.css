@@ -13,6 +13,11 @@ header h1{
     justify-content: center;
     color: rgb(255, 255, 255);
 }
+.home{
+font-size:25px;
+font-family:"roboto";
+padding:10px;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -28,7 +33,14 @@ nav{
 nav ul{
     display:flex;
     gap:2rem;
+    font-size:25px;
+    font-family:"roboto";
+    padding:10px;
 }
 nav ul li{
     list-style-type: none;
+}
+.main{
+background-image:url("https://i.pinimg.com/564x/cb/e8/15/cbe815988dc443f06cb3c83b9d8f368a.jpg");
+height:100vh;
 }

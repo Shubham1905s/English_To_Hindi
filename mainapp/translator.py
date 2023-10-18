@@ -9,10 +9,10 @@ def translator(text):
     # Tokenize the input text
     inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True)
 
-    # Translate the input text to Hindi
+    # this will Translate the input text to Hindi
     translated = model.generate(**inputs)
 
-    # Decode the translated text
+    # and this will Decode the translated text
     translated_text = tokenizer.batch_decode(translated, skip_special_tokens=True)
 
     return translated_text[0]
